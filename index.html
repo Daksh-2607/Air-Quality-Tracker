@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green City AQI Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Air Quality Tracker</h1>
+        <p>Enter a city to check its current Air Quality Index.</p>
+        
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="e.g., New Delhi">
+            <button id="searchBtn">Check AQI</button>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2 id="cityName">City Name</h2>
+            <div class="aqi-circle" id="aqiValue">--</div>
+            <p id="aqiStatus">Status</p>
+        </div>
+        <p id="errorMessage" class="error hidden">City not found. Please try again.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
